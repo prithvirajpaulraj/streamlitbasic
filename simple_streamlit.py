@@ -1,6 +1,6 @@
 import streamlit as st
 import time
-import matplotlib.pyplot as plt
+# import matplotlib.pyplot as plt
 # Pandas is a Python library used for working with data sets.
 # It has functions for analyzing, cleaning, exploring, and manipulating data.
 import pandas as pd
@@ -99,15 +99,15 @@ rand=np.random.normal(1, 2, size=40)
 # 'ax' represents a single subplot within that figure.
 # 'fig' is an intance of matplotlib.figure.Figure.
 # 'ax' is an instance of matplotlib.axes.Axes.
-fig, ax = plt.subplots()
+# fig, ax = plt.subplots()
 # This creates a histogram of the data in the rand array.
 # rand: This is the data to be plotted.
 # bins=15: This specifies the number of bins (intervals) to use for the histogram.
 # In this case, the data will be divided into 15 bins.
-ax.hist(rand, bins=15)
-# st.pyplot(fig): This function call is part of Streamlit.
-# It renders and displays the Matplotlib figure (fig) within a Streamlit application.
-st.pyplot(fig)
+# ax.hist(rand, bins=15)
+# # st.pyplot(fig): This function call is part of Streamlit.
+# # It renders and displays the Matplotlib figure (fig) within a Streamlit application.
+# st.pyplot(fig)
 
 df= pd.DataFrame(    
     np.random.randn(15, 2),    
